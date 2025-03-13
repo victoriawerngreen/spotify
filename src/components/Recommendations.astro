@@ -1,0 +1,47 @@
+---
+import Card_rec from "./Card_rec.astro";
+const { titel } = Astro.props;
+---
+
+<h1>{titel}</h1>
+
+<article>
+  <Card_rec
+    billede="https://via.assets.so/album.png?id=1&q=95&w=360&h=360&fit=fill"
+    beskrivelse="Kunstnernavn"
+  />
+  <Card_rec
+    billede="https://via.assets.so/album.png?id=2&q=95&w=360&h=360&fit=fill"
+    beskrivelse="Kunstnernavn"
+  />
+  <Card_rec
+    billede="https://via.assets.so/album.png?id=3&q=95&w=360&h=360&fit=fill"
+    beskrivelse="Kunstnernavn"
+  />
+  <Card_rec
+    billede="https://via.assets.so/album.png?id=4&q=95&w=360&h=360&fit=fill"
+    beskrivelse="Kunstnernavn"
+  />
+
+  <Card_rec
+    billede="https://via.assets.so/album.png?id=5&q=95&w=360&h=360&fit=fill"
+    beskrivelse="Kunstnernavn"
+  />
+
+  <Card_rec
+    billede="  https://via.assets.so/album.png?id=6&q=95&w=360&h=360&fit=fill"
+    beskrivelse="Kunstnernavn"
+  />
+</article>
+
+<style>
+  article {
+    display: flex;
+    gap: 20px;
+  }
+
+  h1 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+</style>
