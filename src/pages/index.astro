@@ -1,6 +1,9 @@
 ---
+import Filter from "../components/Filter.astro";
+import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Recommendations from "../components/Recommendations.astro";
+import TopPlaylist from "../components/Top_playlist.astro";
 ---
 
 <!doctype html>
@@ -9,19 +12,25 @@ import Recommendations from "../components/Recommendations.astro";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify</title>
+    <link rel="stylesheet" href="../style.css" />
   </head>
 
   <body>
     <Header />
     <main>
+      <Filter />
+      <TopPlaylist />
+
       <Recommendations titel="Specielt til Peter Ulf" />
       <Recommendations titel="Se indhold, som er udvalgt til dig" />
     </main>
+    <Footer />
   </body>
 </html>
 
 <style>
   body {
     background-image: linear-gradient(#261512, #121212);
+    margin-bottom: 100px;
   }
 </style>
