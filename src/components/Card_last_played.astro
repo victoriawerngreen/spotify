@@ -1,0 +1,32 @@
+---
+const { billede, playlistnavn } = Astro.props;
+---
+
+<article>
+  <img src={billede} />
+  <p>{playlistnavn}</p>
+</article>
+
+<style>
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 0.8rem;
+  }
+
+  article {
+    display: flex;
+    background-color: #352b2a;
+    height: 50px;
+    border-radius: 5px;
+    align-items: center;
+  }
+
+  article img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px 0px 0px 5px;
+  }
+</style>

@@ -1,0 +1,27 @@
+---
+import PlayIcon from "./Play_icon.astro";
+import PlayingSong from "./Playing_song.astro";
+---
+
+<article>
+  <PlayingSong />
+  <div><PlayIcon /></div>
+</article>
+
+<style>
+  article {
+    background-color: #000000;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    place-content: center;
+  }
+  div {
+    margin: auto;
+  }
+</style>
